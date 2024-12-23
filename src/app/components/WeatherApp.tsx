@@ -116,7 +116,7 @@ const WeatherApp: React.FC = () => {
                   key={index}
                   className="button-1  p-1 border rounded-lg shadow-sm bg-white flex justify-between items-center"
                 >
-                  <div className='flex flex-col lg:flex-row text-center ml-0'>
+                  <div className='flex flex-col lg:flex-row justify-center items-center text-center ml-0'>
                   <div className=' text-[14px] lg:text-base text-green-500 font-bold ml-1 truncate overflow-hidden whitespace-nowrap'>
                   <span>{new Date(day.dateTime).toLocaleString()}</span>
                   </div>
