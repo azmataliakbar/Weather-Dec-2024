@@ -40,4 +40,12 @@ body {
   text-shadow:4px 4px 16px rgb(123, 122, 122) ;
 }
 
+.bg-image {
+  background-image: url('/sky4.gif');
+  background-size: cover; /* Makes the image cover the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
 

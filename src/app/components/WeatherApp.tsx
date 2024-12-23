@@ -76,8 +76,8 @@ const WeatherApp: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 via-pink-200 to-purple-300 p-4">
-      <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-lg">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-200 via-pink-200 to-purple-300 px-2 py-4">
+      <div className="bg-white bg-image shadow-lg rounded-lg p-6 w-full max-w-lg">
         <h1 className="heading-1 text-2xl  lg:text-4xl text-red-500 font-bold text-center mb-6">Weather App</h1>
         <form onSubmit={handleSearch} className="flex flex-col gap-4">
           <input
@@ -108,7 +108,7 @@ const WeatherApp: React.FC = () => {
         )}
 
         {forecast.length > 0 && (
-          <div className="button-1 bg-gray-50 text-black p-4 rounded-lg shadow-md mt-6 flex flex-col justify-center items-center">
+          <div className="button-1 bg-gray-50  text-black px-4 py-6 rounded-lg shadow-md mt-6 flex flex-col justify-center items-center">
             <div className=''>
             <h3 className=" button-1 text-lg font-bold text-center mb-4 rounded-lg px-16 py-4 lg:px-20">5-Day Forecast</h3>
             </div>
@@ -116,7 +116,7 @@ const WeatherApp: React.FC = () => {
               {forecast.map((day, index) => (
                 <li
                   key={index}
-                  className="button-1  p-0 border rounded-lg shadow-sm bg-white flex justify-between items-center px-10 py-4"
+                  className="button-1 border rounded-lg shadow-sm bg-white flex justify-between items-center px-3 py-2"
                 >
                   <div className='justify-center items-center flex flex-col '>
                   <div className=' text-[20px] lg:text-xl text-green-500 font-bold  truncate overflow-hidden whitespace-nowrap '>
