@@ -110,7 +110,7 @@ const WeatherApp: React.FC = () => {
         {forecast.length > 0 && (
           <div className="button-1 bg-gray-50  text-black px-4 py-6 rounded-lg shadow-md mt-6 flex flex-col justify-center items-center">
             <div className=''>
-            <h3 className=" button-1 text-lg font-bold text-center mb-4 rounded-lg px-16 py-4 lg:px-20">5-Day Forecast</h3>
+            <h3 className=" button-1 text-lg font-bold text-center mb-4 rounded-lg px-16 py-4 lg:px-20">Five Forecasts</h3>
             </div>
             <ul className="space-y-4">
               {forecast.map((day, index) => (
@@ -135,7 +135,7 @@ const WeatherApp: React.FC = () => {
           </div>
         )}
         <div className='author'>
-        <h4 className=' text-center text-sm font-bold text-gray-400 mt-4'>Author: Azmat Ali</h4>
+        <h4 className=' text-center text-sm font-bold text-white mt-4'>Author: Azmat Ali</h4>
         </div>
       </div>
       
