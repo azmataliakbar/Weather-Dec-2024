@@ -108,22 +108,24 @@ const WeatherApp: React.FC = () => {
         )}
 
         {forecast.length > 0 && (
-          <div className="button-1 bg-gray-50 text-black p-4 rounded-lg shadow-md mt-6">
-            <h3 className=" button-1 text-lg font-bold text-center mb-4 rounded-lg">5-Day Forecast</h3>
+          <div className="button-1 bg-gray-50 text-black p-4 rounded-lg shadow-md mt-6 flex flex-col justify-center items-center">
+            <div className=''>
+            <h3 className=" button-1 text-lg font-bold text-center mb-4 rounded-lg px-16 py-4 lg:px-20">5-Day Forecast</h3>
+            </div>
             <ul className="space-y-4">
               {forecast.map((day, index) => (
                 <li
                   key={index}
-                  className="button-1  p-0 border rounded-lg shadow-sm bg-white flex justify-between items-center"
+                  className="button-1  p-0 border rounded-lg shadow-sm bg-white flex justify-between items-center px-10 py-4"
                 >
-                  <div className='flex flex-col lg:flex-col lg:ml-14 justify-center items-center text-center'>
-                  <div className=' text-[20px] lg:text-xl text-green-500 font-bold ml-10 truncate overflow-hidden whitespace-nowrap '>
+                  <div className='justify-center items-center flex flex-col '>
+                  <div className=' text-[20px] lg:text-xl text-green-500 font-bold  truncate overflow-hidden whitespace-nowrap '>
                   <span>{new Date(day.dateTime).toLocaleString()}</span>
                   </div>
-                  <div className=' text-[25px] ml-10 lg:text-2xl lg:ml-12 text-red-500 font-bold '>
+                  <div className=' text-[25px]  lg:text-2xl  text-red-500 font-bold '>
                   <span className=''>{day.temperature}°C</span>
                   </div>
-                  <div className=' text-[20px] ml-10 lg:text-2xl lg:ml-12 text-blue-500 font-bold'>
+                  <div className=' text-[20px]  lg:text-2xl  text-blue-500 font-bold'>
                   <span className=''>{day.description}</span>
                   </div>
                   </div>
